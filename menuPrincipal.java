@@ -15,7 +15,8 @@ public class menuPrincipal {
                     System.out.println("|    2. lista      |");
                     System.out.println("--------------------");
                     System.out.println("");
-                    System.out.println("Digite a opçõ desejada: ");
+                    System.out.println("Digite a opção desejada: ");
+                    System.out.println("Digite qualquer tecla para fechar o programa ");
 
                     int o = opcaoMenuPrincipal.nextInt();
 
