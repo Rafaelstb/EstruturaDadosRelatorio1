@@ -7,6 +7,7 @@ public class menuVetor {
           public int menu() {
                     Scanner opcaoMenuVetor = new Scanner(System.in);
                     menuPrincipal Mp = new menuPrincipal();
+                    vetorOperacao Vet = new menuVetor();
 
                     System.out.println("----------------------------");
                     System.out.println("|    1. Inserir Dados      |");
@@ -21,7 +22,8 @@ public class menuVetor {
 
                     switch (o) {
                               case 1:
-                                        System.out.println("Opcao 01 inserida");
+                                        Vet.push(5);
+
                                         break;
                               case 2:
                                         System.out.println("Opcao 01 inserida");
