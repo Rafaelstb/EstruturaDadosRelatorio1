@@ -1,15 +1,15 @@
 
-public class vetorOperacao {
+public class Vetor {
 
           int elementos[];
           int topo;
 
-          public  Vet() {
-          
-                              elementos = new int[10];
-                              topo = -1;
-          
-                    }
+          public Vetor() {
+
+                    elementos = new int[10];
+                    topo = -1;
+
+          }
 
           public void push(int e) {
 
@@ -35,6 +35,14 @@ public class vetorOperacao {
 
           public int top() {
                     return elementos[topo];
+          }
+
+          public void imprimir() {
+
+                    for (int i = topo; i < -1; i--) {
+                              System.out.println("Elemento : " + elementos[i]);
+                    }
+
           }
 
 }
