@@ -12,12 +12,17 @@ public class Vetor {
           }
 
           public void push(int e) {
-
+                    if (isFull()) {
+                              throw new RuntimeException("Stack OverFlow");
+                    }
                     topo++;
                     elementos[topo] = e;
           }
 
           public int pop() {
+                    if (isEmpty()) {
+                              throw new RuntimeException("Stack Emptu");
+                    }
                     int e;
                     e = elementos[topo];
                     topo--;
@@ -39,7 +44,7 @@ public class Vetor {
 
           public void imprimir() {
 
-                    for (int i = topo; i < -1; i--) {
+                    for (int i = topo; i < -1; i++) {
                               System.out.println("Elemento : " + elementos[i]);
                     }
 
