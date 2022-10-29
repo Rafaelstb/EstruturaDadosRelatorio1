@@ -23,7 +23,6 @@ public class menuVetor {
                               case 1:
 
                                         Op.inserir();
-                                        menu();
 
                                         break;
                               case 2:
