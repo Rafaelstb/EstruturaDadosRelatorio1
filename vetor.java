@@ -1,3 +1,4 @@
+import javax.xml.transform.Source;
 
 public class Vetor {
 
@@ -21,7 +22,7 @@ public class Vetor {
 
           public int pop() {
                     if (isEmpty()) {
-                              throw new RuntimeException("Stack Emptu");
+                              throw new RuntimeException("Stack Empty");
                     }
                     int e;
                     e = elementos[topo];
@@ -39,15 +40,10 @@ public class Vetor {
           }
 
           public int top() {
-                    return elementos[topo];
-          }
-
-          public void imprimir() {
-
-                    for (int i = topo; i < -1; i--) {
-                              System.out.println("Elemento : " + elementos[i]);
+                    if (isEmpty()) {
+                              throw new RuntimeException("Empty Stack");
                     }
-
+                    return elementos[topo];
           }
 
 }

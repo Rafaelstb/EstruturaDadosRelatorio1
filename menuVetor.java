@@ -5,9 +5,9 @@ public class menuVetor {
 
           public int menu() {
                     Scanner opcaoMenuVetor = new Scanner(System.in);
-                    Scanner num = new Scanner(System.in);
+
                     menuPrincipal Mp = new menuPrincipal();
-                    Vetor Vet = new Vetor();
+                    operacoes Op = new operacoes();
 
                     System.out.println("----------------------------");
                     System.out.println("|    1. Inserir Dados      |");
@@ -21,10 +21,9 @@ public class menuVetor {
 
                     switch (o) {
                               case 1:
-                                        System.out.println("Digite um numero para inserir no vetor: ");
-                                        int numero = num.nextInt();
-                                        Vet.push(numero);
-                                        menu();
+
+                                        Op.inserir();
+                                        // menu();
 
                                         break;
                               case 2:
@@ -35,7 +34,8 @@ public class menuVetor {
                                         break;
                               case 4:
 
-                                        Vet.imprimir();
+                                        // Op.imprimir();
+
                                         break;
                               case 5:
                                         Mp.menu();

@@ -1,8 +1,8 @@
 
-
 import java.util.Scanner;
 
 public class main {
+          int a = 10;
 
           Scanner opcaoMenuPrincipal = new Scanner(System.in);
 
