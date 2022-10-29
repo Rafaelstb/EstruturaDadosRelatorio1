@@ -18,6 +18,7 @@ public class Vetor {
                     }
                     topo++;
                     elementos[topo] = e;
+
           }
 
           public int pop() {

@@ -23,7 +23,7 @@ public class menuVetor {
                               case 1:
 
                                         Op.inserir();
-                                        // menu();
+                                        menu();
 
                                         break;
                               case 2:
@@ -34,7 +34,7 @@ public class menuVetor {
                                         break;
                               case 4:
 
-                                        // Op.imprimir();
+                                        Op.imprimir();
 
                                         break;
                               case 5:

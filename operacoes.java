@@ -10,7 +10,7 @@ public class operacoes {
 
                     while (n != 100) {
 
-                              System.out.println("Digite um numero para inserir no vetor ou 100 para sair ");
+                              System.out.println("Digite um numero para inserir no vetor ou 100 para sair");
                               n = num.nextInt();
                               Vet.push(n);
                     }
