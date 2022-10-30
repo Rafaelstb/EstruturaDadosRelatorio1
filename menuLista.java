@@ -2,10 +2,12 @@
 import java.util.Scanner;
 
 public class menuLista {
+          int o;
 
-          public int menu() {
+          public void menu() {
                     Scanner opcaoMenuVetor = new Scanner(System.in);
                     menuPrincipal Mp = new menuPrincipal();
+                    operacoes Op = new operacoes();
 
                     System.out.println("----------------------------");
                     System.out.println("|    1. Inserir Dados      |");
@@ -17,32 +19,23 @@ public class menuLista {
                     System.out.println("----------------------------");
                     System.out.println("Digite a opçõ desejada: ");
 
-                    int o = opcaoMenuVetor.nextInt();
+                    o = opcaoMenuVetor.nextInt();
 
-                    switch (o) {
-                              case 1:
-                                        System.out.println("Opcao 01 inserida");
-                                        break;
-                              case 2:
-                                        System.out.println("Opcao 02 inserida");
-                                        break;
-                              case 3:
-                                        System.out.println("Opcao 03 inserida");
-                                        break;
-                              case 4:
-                                        System.out.println("Opcao 04 inserida");
-                                        break;
-                              case 5:
-                                        System.out.println("Opcao 05 inserida");
-                                        break;
-                              case 6:
-                                        Mp.menu();
-                                        break;
-
+                    if (o == 1) {
+                              Op.inserir();
+                    }
+                    if (o == 2) {
+                              Op.alterar();
+                    }
+                    if (o == 3) {
+                              Op.pesquisar();
+                    }
+                    if (o == 4) {
+                              Op.imprimir();
+                    }
+                    if (o == 5) {
+                              Mp.menu();
                     }
 
-                    return o;
-
           }
-
 }
