@@ -12,12 +12,13 @@ public class Vetor {
 
           }
 
-          public void push(int e) {
+          public int push(int e) {
                     if (isFull()) {
                               throw new RuntimeException("Stack OverFlow");
                     }
                     topo++;
                     elementos[topo] = e;
+                    return topo;
 
           }
 
