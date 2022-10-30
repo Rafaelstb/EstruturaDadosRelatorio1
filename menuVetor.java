@@ -13,6 +13,7 @@ public class menuVetor {
                     operacoes Op = new operacoes();
 
                     while (o != 5) {
+                              o = 0;
 
                               System.out.println("----------------------------");
                               System.out.println("|    1. Inserir Dados      |");
@@ -31,7 +32,7 @@ public class menuVetor {
                                         Op.alterar();
                               }
                               if (o == 3) {
-                                        Op.inserir();
+                                        Op.pesquisar();
                               }
                               if (o == 4) {
                                         Op.imprimir();

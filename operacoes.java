@@ -4,6 +4,7 @@ public class operacoes {
 
           Scanner num = new Scanner(System.in);
           Scanner novoNumero = new Scanner(System.in);
+          Scanner numPesq = new Scanner(System.in);
           Vetor Vet = new Vetor();
           menuVetor Menu = new menuVetor();
 
@@ -38,6 +39,14 @@ public class operacoes {
                     System.out.println("Digite o numero que quer colocar na possição:");
                     int nNovo = novoNumero.nextInt();
                     Vet.elementos[nAlt] = nNovo;
+
+          }
+
+          public void pesquisar() {
+
+                    System.out.println("Digite a posição do Vetor que deseja saber");
+                    int x = numPesq.nextInt();
+                    System.out.println("O numero pesquisado é : " + Vet.elementos[x]);
 
           }
 }
