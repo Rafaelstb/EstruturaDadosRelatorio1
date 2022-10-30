@@ -6,6 +6,13 @@
           "configurations": [
                     {
                               "type": "java",
+                              "name": "Launch ListaTeste",
+                              "request": "launch",
+                              "mainClass": "ListaTeste",
+                              "projectName": "EstruturaDadosRelatorio1_4c47848"
+                    },
+                    {
+                              "type": "java",
                               "name": "Launch Current File",
                               "request": "launch",
                               "mainClass": "${file}"

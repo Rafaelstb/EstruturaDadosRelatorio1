@@ -1,51 +1,18 @@
 import javax.xml.transform.Source;
 
-public class lista {
+public class lista<T> {
 
-          int elementos[];
-          int topo;
+          private No<T> inicio;
 
-          public lista() {
-
-                    elementos = new int[10];
-                    topo = -1;
+          public void adiciona(T elemento) {
+                    No<T> celula = new No<T>(elemento);
+                    this.inicio = celula;
 
           }
 
-          public int push(int e) {
-                    if (isFull()) {
-                              throw new RuntimeException("Stack OverFlow");
-                    }
-                    topo++;
-                    elementos[topo] = e;
-                    return topo;
-
-          }
-
-          public int pop() {
-                    if (isEmpty()) {
-                              throw new RuntimeException("Stack Empty");
-                    }
-                    int e;
-                    e = elementos[topo];
-                    topo--;
-                    return e;
-          }
-
-          public boolean isEmpty() {
-                    return (topo == -1);
-
-          }
-
-          public boolean isFull() {
-                    return (topo == 9);
-          }
-
-          public int top() {
-                    if (isEmpty()) {
-                              throw new RuntimeException("Empty Stack");
-                    }
-                    return elementos[topo];
+          @Override
+          public String toString() {
+                    return "lista [inicio=" + inicio + "]";
           }
 
 }
