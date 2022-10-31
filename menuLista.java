@@ -7,7 +7,7 @@ public class menuLista {
           public void menu() {
                     Scanner opcaoMenuVetor = new Scanner(System.in);
                     menuPrincipal Mp = new menuPrincipal();
-                    operacoes Op = new operacoes();
+                    OperacoesLista Op = new OperacoesLista();
 
                     System.out.println("----------------------------");
                     System.out.println("|    1. Inserir Dados      |");
@@ -25,16 +25,16 @@ public class menuLista {
                               Op.inserir();
                     }
                     if (o == 2) {
-                              Op.alterar();
+                              // Op.alterar();
                     }
                     if (o == 3) {
-                              Op.pesquisar();
+                              // Op.pesquisar();
                     }
                     if (o == 4) {
-                              Op.imprimir();
+                              // Op.imprimir();
                     }
                     if (o == 5) {
-                              Mp.menu();
+                              // Mp.menu();
                     }
 
           }

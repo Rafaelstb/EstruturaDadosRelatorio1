@@ -2,6 +2,7 @@ public class No<T> {
 
           private T elemento;
           private No<T> proximo;
+          public Object tamanho;
 
           public T getElemento() {
 
