@@ -5,28 +5,35 @@ public class OperacoesLista {
           Scanner num = new Scanner(System.in);
           Scanner novoNumero = new Scanner(System.in);
           Scanner numPesq = new Scanner(System.in);
+          Scanner f = new Scanner(System.in);
 
           lista<Integer> lista = new lista<>();
 
           int n;
-          String fim = "fim";
+          String fim;
 
           public void inserir() {
 
-                    // while (fim != "fim") {
+                    while (fim != "fim") {
 
-                    lista.adiciona(1);
+                              System.out.println("Digite um numero para inserir na lista, se quiser encerrar digite fim");
+                              int i = num.nextInt();
+                              fim = f.nextLine();
 
-                    System.out.println("Tamanho = " + lista.getTamanho());
-                    System.out.println(lista);
+                              lista.adiciona(i);
 
-                    lista.adiciona(2);
-                    System.out.println(lista);
+                              /*
+                               * System.out.println("Tamanho = " + lista.getTamanho());
+                               * System.out.println(lista);
+                               * 
+                               * lista.adiciona(2);
+                               * System.out.println(lista);
+                               * 
+                               * lista.adiciona(3);
+                               * System.out.println(lista);
+                               */
 
-                    lista.adiciona(3);
-                    System.out.println(lista);
-
-                    // }
+                    }
 
           }
 
