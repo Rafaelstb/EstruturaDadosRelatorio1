@@ -33,6 +33,43 @@ public class lista<T> {
                     return 1;
           }
 
+          public void alterarDado(int posicao, int novoValor) {
+                    selecionarDado(posicao).setElemento(novoValor);
+          }
+
+          public void excluirDado(int posicao) {
+                    No anterior = selecionarDado(posicao).getAnterior();
+                    No proximo = selecionarDado(posicao).getProximo();
+
+                    selecionarDado(posicao).getProximo().setAnterior(anterior);
+                    selecionarDado(posicao).getAnterior().setProximo(proximo);
+
+                    tamanho--;
+          }
+
+          public No selecionarDado(int posicao) {
+                    No atual = inicio;
+                    for (int i = 0; i < posicao; i++) {
+                              if (atual.getProximo() != null) {
+                                        atual = atual.getProximo();
+                              }
+                    }
+                    return atual;
+          }
+
+          public void pesquisarDado(int dado) {
+
+                    No atual = inicio;
+                    for (int i = 0; i < tamanho; i++) {
+                              if (dado == atual.getElemento()) {
+                                        System.out.println("O valor " + dado + " está na posição " + i);
+                              }
+                              if (atual.getProximo() != null) {
+                                        atual = atual.getProximo();
+                              }
+                    }
+          }
+
           @Override
           public String toString() {
 

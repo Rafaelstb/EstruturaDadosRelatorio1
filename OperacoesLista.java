@@ -5,6 +5,7 @@ public class OperacoesLista {
           Scanner num = new Scanner(System.in);
           Scanner novoNumero = new Scanner(System.in);
           Scanner numPesq = new Scanner(System.in);
+          Scanner s = new Scanner(System.in);
 
           lista<Integer> lista = new lista<>();
 
@@ -28,6 +29,24 @@ public class OperacoesLista {
 
           public void alterar() {
 
+                    System.out.println("Digite a posição da alteração:");
+                    int posicao = s.nextInt();
+                    System.out.println("Digite um novo valor inteiro para o nó:");
+                    int valor4 = s.nextInt();
+                    lista.alterarDado(posicao, valor4);
+
+          }
+
+          public void excluir() {
+                    System.out.println("Digite a posição que quer excluir: ");
+                    int valor5 = s.nextInt();
+                    lista.excluirDado(valor5);
+          }
+
+          public void pesquisa() {
+                    System.out.println("Digite o numero que quer pesquisar ");
+                    int d = s.nextInt();
+                    lista.pesquisarDado(d);
           }
 
           public void mostrar() {

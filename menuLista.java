@@ -25,13 +25,13 @@ public class menuLista {
                               Op.inserir();
                     }
                     if (o == 2) {
-                              // Op.alterar();
+                              Op.alterar();
                     }
                     if (o == 3) {
-                              // Op.pesquisar();
+                              Op.excluir();
                     }
                     if (o == 4) {
-                              // Op.imprimir();
+                              Op.pesquisa();
                     }
                     if (o == 5) {
                               Op.mostrar();
