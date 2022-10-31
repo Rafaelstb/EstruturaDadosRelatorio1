@@ -40,7 +40,7 @@ public class OperacoesLista {
           public void excluir() {
                     System.out.println("Digite a posição que quer excluir: ");
                     int valor5 = s.nextInt();
-                    lista.excluirDado(valor5);
+                    lista.excluir(valor5);
           }
 
           public void pesquisa() {

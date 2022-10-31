@@ -17,6 +17,7 @@ public class lista<T> {
                     }
 
                     this.ultimo = celula;
+                    ultimo.setAnterior(celula);
                     this.tamanho++;
 
           }
@@ -25,19 +26,11 @@ public class lista<T> {
                     return this.tamanho;
           }
 
-          public int alterar() {
-                    Scanner posicaoAltera = new Scanner(System.in);
-                    System.out.println("Digite a posição que deseja alterar");
-                    int num = posicaoAltera.nextInt();
-
-                    return 1;
-          }
-
           public void alterarDado(int posicao, int novoValor) {
                     selecionarDado(posicao).setElemento(novoValor);
           }
 
-          public void excluirDado(int posicao) {
+          public void excluir(int posicao) {
                     No anterior = selecionarDado(posicao).getAnterior();
                     No proximo = selecionarDado(posicao).getProximo();
 
