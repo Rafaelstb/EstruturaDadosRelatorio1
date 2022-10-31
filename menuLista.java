@@ -34,7 +34,7 @@ public class menuLista {
                               // Op.imprimir();
                     }
                     if (o == 5) {
-                              // Mp.menu();
+                              Mp.menu();
                     }
 
           }

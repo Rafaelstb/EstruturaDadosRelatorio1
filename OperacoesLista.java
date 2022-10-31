@@ -8,6 +8,7 @@ public class OperacoesLista {
           Scanner f = new Scanner(System.in);
 
           lista<Integer> lista = new lista<>();
+          menuLista Ml = new menuLista();
 
           int n;
           String fim;
@@ -17,6 +18,7 @@ public class OperacoesLista {
                     while (fim != "fim") {
 
                               System.out.println("Digite um numero para inserir na lista, se quiser encerrar digite fim");
+
                               int i = num.nextInt();
                               fim = f.nextLine();
 
@@ -34,6 +36,8 @@ public class OperacoesLista {
                                */
 
                     }
+
+                    Ml.menu();
 
           }
 
