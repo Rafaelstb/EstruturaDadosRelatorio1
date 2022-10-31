@@ -26,6 +26,10 @@ public class OperacoesLista {
 
           }
 
+          public void alterar() {
+
+          }
+
           public void mostrar() {
 
                     System.out.println(lista);
