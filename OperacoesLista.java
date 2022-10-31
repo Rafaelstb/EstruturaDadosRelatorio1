@@ -11,15 +11,16 @@ public class OperacoesLista {
           menuLista Ml = new menuLista();
 
           int n;
+          int i;
           String fim;
 
           public void inserir() {
 
-                    while (fim != "fim") {
+                    while (i != 99) {
 
-                              System.out.println("Digite um numero para inserir na lista, se quiser encerrar digite fim");
+                              System.out.println("Digite um numero para inserir na lista, se quiser encerrar digite 99");
 
-                              int i = num.nextInt();
+                              i = num.nextInt();
                               fim = f.nextLine();
 
                               lista.adiciona(i);
