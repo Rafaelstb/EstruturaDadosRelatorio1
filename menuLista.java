@@ -3,11 +3,11 @@ import java.util.Scanner;
 
 public class menuLista {
           int o;
+          OperacoesLista Op = new OperacoesLista();
 
           public void menu() {
                     Scanner opcaoMenuVetor = new Scanner(System.in);
                     menuPrincipal Mp = new menuPrincipal();
-                    OperacoesLista Op = new OperacoesLista();
 
                     System.out.println("----------------------------");
                     System.out.println("|    1. Inserir Dados      |");
@@ -34,8 +34,13 @@ public class menuLista {
                               // Op.imprimir();
                     }
                     if (o == 5) {
+                              Op.mostrar();
+                    }
+                    if (o == 6) {
                               Mp.menu();
                     }
+
+                    menu();
 
           }
 }
