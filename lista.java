@@ -59,15 +59,17 @@ public class lista<T> {
 
           public void pesquisarDado(int dado) {
 
-                    No atual = inicio;
-                    for (int i = 0; i < tamanho; i++) {
-                              if (dado == atual.getElemento()) {
-                                        System.out.println("O valor " + dado + " está na posição " + i);
-                              }
-                              if (atual.getProximo() != null) {
-                                        atual = atual.getProximo();
-                              }
-                    }
+                    /*
+                     * No atual = inicio;
+                     * for (int i = 0; i < tamanho; i++) {
+                     * if (dado == atual.getElemento()) {
+                     * System.out.println("O valor " + dado + " está na posição " + i);
+                     * }
+                     * if (atual.getProximo() != null) {
+                     * atual = atual.getProximo();
+                     * }
+                     * }
+                     */
           }
 
           @Override
