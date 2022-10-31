@@ -24,6 +24,7 @@ public class OperacoesLista {
                               fim = f.nextLine();
 
                               lista.adiciona(i);
+                              System.out.println("Tamanho da lista agora é = " + lista.getTamanho());
 
                               /*
                                * System.out.println("Tamanho = " + lista.getTamanho());
@@ -39,6 +40,10 @@ public class OperacoesLista {
                     }
 
                     Ml.menu();
+
+          }
+
+          public void alterar() {
 
           }
 
